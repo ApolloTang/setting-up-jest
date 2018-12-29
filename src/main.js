@@ -6,13 +6,7 @@ const b = {b: 'b', ...a}
 
 console.log('spread works: ', b)
 
-class MyClass {
-  static myStaticProp = 'myStaticProp'
-  static getMyStaticProp = () => MyClass.myStaticProp
-  myClassProp = 'myClassProp'
-  getMyClassProp = () => this.myClassProp
-}
-
+import MyClass from './my-class.js'
 const myClass = new MyClass()
 console.log('MyClass.gerMyStaticProps: ', MyClass.getMyStaticProp())
 console.log('myClass.gerMyClassProps: ', myClass.getMyClassProp())
