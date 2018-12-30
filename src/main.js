@@ -13,3 +13,16 @@ console.log('myClass.gerMyClassProps: ', myClass.getMyClassProp())
 
 const testPolyFill = [1,2].includes(1); // true
 console.log('polyFill work: ', testPolyFill)
+
+
+
+import('./lazy-load').then((m)=>{
+  console.log('content of lazy module test 1:', m)
+})
+
+;(async function() {
+  console.log('...loading lazy module')
+  const lazyContent = await import('./lazy-load')
+  console.log('content of lazy module test 2: ', lazyContent)
+})()
+

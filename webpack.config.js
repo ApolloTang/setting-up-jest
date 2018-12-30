@@ -3,7 +3,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 module.exports = (env) => {
   const configOut = {
     mode: 'none',
-    entry: './src/main.js',
+    entry: [
+      '@babel/polyfill',  // See: https://github.com/babel/babel/issues/8829
+      './src/main.js'
+    ],
     output: {
       filename: 'bundle.js'
     },

@@ -7,14 +7,18 @@ module.exports = (api) => {
       "@babel/preset-env",
       {
         "targets": {"IE":"11"}
-        , "useBuiltIns": "usage"
+        , "useBuiltIns": "entry" // see: https://github.com/babel/babel/issues/8829
         , "modules": isTest ? "commonjs" : "false"
       }
     ]
   ];
+
   const plugins = [
-    "@babel/proposal-class-properties"
-  ];
+    "@babel/proposal-class-properties",
+    "@babel/plugin-syntax-dynamic-import",
+    isTest ? 'babel-plugin-dynamic-import-node' : null
+  ].filter(Boolean);
+
   return {
     presets,
     plugins
