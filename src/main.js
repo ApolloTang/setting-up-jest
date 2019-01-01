@@ -1,3 +1,5 @@
+import ReactDom from 'react-dom'
+import React from 'react'
 
 console.log('hello webpack')
 
@@ -30,3 +32,10 @@ import('./lazy-load').then((m)=>{
   console.log('content of lazy module test 2: ', lazyContent)
 })()
 
+
+ReactDom.render(
+  <React.Fragment>
+    <h1>Hello React</h1>
+  </React.Fragment>,
+  document.getElementById('app')
+)

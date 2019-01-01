@@ -10,7 +10,8 @@ module.exports = (api) => {
         , "useBuiltIns": "entry" // see: https://github.com/babel/babel/issues/8829
         , "modules": isTest ? "commonjs" : "false"
       }
-    ]
+    ],
+    "@babel/preset-react",
   ];
 
   const plugins = [
