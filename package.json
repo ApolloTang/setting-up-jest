@@ -28,6 +28,7 @@
     "dev": "webpack-dev-server",
     "build": "webpack",
     "compile": "NODE_ENV=test webpack",
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "clearCache": "jest --clearCache"
   }
 }
