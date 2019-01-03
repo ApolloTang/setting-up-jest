@@ -40,4 +40,4 @@ ReactDom.render(
   document.getElementById('app')
 )
 
-import webpackSetupCheck from './webpack-setup-check.js'
+import webpackSetupCheck from './setup-check/webpack-setup-check.js'
