@@ -18,6 +18,13 @@ module.exports = (env) => {
             { loader: 'babel-loader' }
           ],
           exclude: /node_modules/  // <---- very important
+        },
+        {
+          test: /\.css$/,
+          use: [
+            { loader: 'style-loader' },
+            { loader: 'css-loader' }
+          ],
         }
       ]
     },

@@ -39,3 +39,5 @@ ReactDom.render(
   </React.Fragment>,
   document.getElementById('app')
 )
+
+import webpackSetupCheck from './webpack-setup-check.js'
