@@ -4,5 +4,8 @@ module.exports = {
   "testEnvironment": 'jsdom',
   "setupFiles": [
     "<rootDir>/jest.init.js"
-  ]
+  ],
+  moduleNameMapper: {
+    '\\.css$': require.resolve('./test/style-mock.js')
+  }
 }
