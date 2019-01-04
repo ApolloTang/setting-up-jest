@@ -10,8 +10,15 @@ test('Using Snapshots',  ()=>{
   expect(myData).toMatchSnapshot();
 });
 
-test('Using Snapshots on component',  ()=>{
+test('Using Snapshots on component.innerHTML',  ()=>{
   const {container} = render(<MyComponent />);
   expect(container.innerHTML).toMatchSnapshot();
 });
+
+
+test('Using Snapshots on component.firstChild',  ()=>{
+  const {container} = render(<MyComponent />);
+  expect(container.firstChild).toMatchSnapshot();
+});
+
 
