@@ -5,4 +5,3 @@ test('Using Snapshots',  ()=>{
   expect(myData).toMatchSnapshot();
 });
 
-
