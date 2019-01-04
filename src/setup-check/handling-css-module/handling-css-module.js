@@ -1,5 +1,5 @@
 import React from 'react';
-import style from './handling-css.module.css';
+import style from './handling-css-module.module.css';
 
 const MyComponentWithCssModule = () => (
   <div>

@@ -7,5 +7,5 @@ const portal = document.createElement('div');
 portal.id = 'handling-css-module-check';
 document.body.appendChild(portal)
 
-ReactDom.render(<HandlingCssModule />, portal)
+ReactDom.render(<HandlingCssModule />, portal);
 
