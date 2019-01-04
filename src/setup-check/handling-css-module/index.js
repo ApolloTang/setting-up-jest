@@ -5,7 +5,7 @@ import HandlingCssModule from './handling-css-module.js';
 
 const portal = document.createElement('div');
 portal.id = 'handling-css-module-check';
-document.body.appendChild(portal)
+document.body.appendChild(portal);
 
 ReactDom.render(<HandlingCssModule />, portal);
 

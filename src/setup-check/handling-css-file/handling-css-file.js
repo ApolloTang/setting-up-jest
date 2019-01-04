@@ -4,6 +4,6 @@ const text ='This text is styled by ".some-class-in-import-css", and its color i
 const container = document.createElement('div');
 const textNode = document.createTextNode(text);
 container.className='some-class-in-import-css';
-container.appendChild(textNode)
-document.body.append(container)
+container.appendChild(textNode);
+document.body.append(container);
 
