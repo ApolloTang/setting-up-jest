@@ -13,19 +13,29 @@ module.exports = (env) => {
     module: {
       rules: [
         {
+          test: /\.css$/,
+          exclude: /\.module\.css$/,  // <---- very important
+          use: [
+            { loader: 'style-loader' },
+            { loader: 'css-loader' }
+          ],
+        },
+        {
+          test: /\.module\.css$/,
+          use: [
+            { loader: 'style-loader' },
+            { loader: 'css-loader',
+              options: {modules: true, camelCase: true}
+            }
+          ],
+        },
+        {
           test: /\.js$/,
           use: [
             { loader: 'babel-loader' }
           ],
           exclude: /node_modules/  // <---- very important
         },
-        {
-          test: /\.css$/,
-          use: [
-            { loader: 'style-loader' },
-            { loader: 'css-loader' }
-          ],
-        }
       ]
     },
     plugins: [
