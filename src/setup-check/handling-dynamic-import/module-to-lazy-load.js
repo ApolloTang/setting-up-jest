@@ -1,1 +1,2 @@
-export default 'from lazy loaded module';
+import lazyContent from './content-for-lazy-module.js';
+export default lazyContent;
