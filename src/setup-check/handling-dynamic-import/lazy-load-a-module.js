@@ -1,6 +1,6 @@
 import lazyContent from './content-for-lazy-module.js';
 
-const isBrowser = !(navigator.userAgent.includes("Node.js") || navigator.userAgent.includes("jsdom"));
+const isBrowser = !(navigator.userAgent.includes("Node.js") || navigator.userAgent.includes("jsdom")); // https://github.com/jsdom/jsdom/issues/1537
 
 const p1 = new Promise((rs, rj) => {
   import('./module-to-lazy-load').then(({default:content})=>{
