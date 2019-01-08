@@ -9,7 +9,9 @@ exports[`lazy load a component 1`] = `
 `;
 
 exports[`lazy load a component 2`] = `
-<div>
+<div
+  class="component-to-lazy-load"
+>
   lazy loaded content
 </div>
 `;
