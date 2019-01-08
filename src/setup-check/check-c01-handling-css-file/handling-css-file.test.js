@@ -3,6 +3,6 @@ const styleMock = require(`${configuration().testFolderPath}/style-mock.js`);
 
 import importedCssFilefrom from './handling-css-file.js';
 
-test('It handle css file', ()=>{
+test('handling-css-file.test: Jest handle css file', ()=>{
   expect(importedCssFilefrom).toEqual(styleMock);
 })
