@@ -34,6 +34,7 @@
     "build": "webpack",
     "compile": "NODE_ENV=test webpack",
     "test": "jest --watch",
+    "t:debug": "node --inspect-brk ./node_modules/jest/bin/jest.js --runInBand",
     "clearCache": "jest --clearCache"
   }
 }
