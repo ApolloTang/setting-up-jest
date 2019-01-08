@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`lazy load a component 1`] = `
+<div>
+  <p>
+    ...loading
+  </p>
+</div>
+`;
+
+exports[`lazy load a component 2`] = `
+<div>
+  lazy loaded content
+</div>
+`;
