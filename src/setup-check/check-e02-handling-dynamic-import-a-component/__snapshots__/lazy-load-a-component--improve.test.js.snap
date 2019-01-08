@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`lazy load a component 1`] = `
+exports[`lazy load a component (imrpoved) 1`] = `
 <p
   class="loading-in-progress"
 >
@@ -8,7 +8,7 @@ exports[`lazy load a component 1`] = `
 </p>
 `;
 
-exports[`lazy load a component 2`] = `
+exports[`lazy load a component (imrpoved) 2`] = `
 <div
   class="component-to-lazy-load"
 >

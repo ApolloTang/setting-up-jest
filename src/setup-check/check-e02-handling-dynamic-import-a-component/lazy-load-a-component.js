@@ -9,7 +9,7 @@ const promise = new Promise((rs, rj)=>{
 
 const MyComponent = Loadable({
   loader: ()=> promise,
-  loading: ()=> <div><p>...loading</p></div>
+  loading: ()=> <p className='loading-in-progress'>...loading</p>
 });
 
 export default MyComponent;
