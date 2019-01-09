@@ -6,7 +6,9 @@ module.exports = {
     // collection of script to run before jest is loaded
     "<rootDir>/test/jest.init.js"
   ],
-  setupTestFrameworkScriptFile: require.resolve('./test/setup-tests.js'), // path to script after jest is loaded
+  setupFilesAfterEnv: [
+    require.resolve('./test/setup-tests.js'), // path to script after jest is loaded
+  ],
   moduleNameMapper: {
     '\\.module\\.css$': 'identity-obj-proxy',
     '\\.css$': require.resolve('./test/style-mock.js')
