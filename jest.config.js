@@ -2,26 +2,27 @@ const {defaults} = require('jest-config');
 
 module.exports = {
 
-  // "testMatch": [ "**/__jest__/**/*.js?(x)", "**/?(*.)+(jest).js?(x)" ], // <--- if use this jest won't compile typescript
+  // 'testMatch': [ '**/__jest__/**/*.js?(x)', '**/?(*.)+(jest).js?(x)' ], //@ [bug] if use this jest won't compile typescript
 
-  "testPathIgnorePatterns": [
-    "/nodule_module/",
+  testPathIgnorePatterns: [
+    '/nodule_module/',
   ],
 
-  "projects" : [
-    "src"
+  projects : [
+    'src'
   ],
 
   // "testEnvironment": 'node',
-  "testEnvironment": 'jsdom',
+  testEnvironment: 'jsdom',
 
-  "setupFiles": [
-    // collection of script to run before jest is loaded
+  //@ Scripts to run before jest is loaded
+  setupFiles: [
     "<rootDir>/test/jest.init.js"
   ],
 
+  //@ Scripts to run after jest is loaded
   setupFilesAfterEnv: [
-    require.resolve('./test/setup-tests.js'), // path to script after jest is loaded
+    require.resolve('./test/setup-tests.js'),
   ],
 
   moduleNameMapper: {
