@@ -34,6 +34,21 @@ module.exports = {
   //@ configuration script in 'test' folder. This lead to wrong statistic on coverage
   collectCoverageFrom: [
     '**/src/**/*.(js|jsx|ts|tsx)' // only run coverage in src (ie. test/ folder is excluded)
-  ]
+  ],
+
+  coverageThreshold: {
+    global: {
+      stagements: 50,
+      branch: 50,
+      functions: 50,
+      lines: 50
+    },
+    './src/setup-check/check-a02-handling-async-function/my-async-fn.js': {
+      stagements: 100,
+      branch: 100,
+      functions: 100,
+      lines: 100
+    }
+  }
 
 };
