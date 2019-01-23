@@ -28,6 +28,12 @@ module.exports = {
   moduleNameMapper: {
     '\\.module\\.css$': 'identity-obj-proxy',
     '\\.css$': require.resolve('./test/style-mock.js')
-  }
+  },
+
+  //@ if collectCoverageFrom absence, jest coverage will take into account of
+  //@ configuration script in 'test' folder. This lead to wrong statistic on coverage
+  collectCoverageFrom: [
+    '**/src/**/*.js' // only run coverage in src (ie. test/ folder is excluded)
+  ]
 
 };
