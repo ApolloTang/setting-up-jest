@@ -33,7 +33,7 @@ module.exports = {
   //@ if collectCoverageFrom absence, jest coverage will take into account of
   //@ configuration script in 'test' folder. This lead to wrong statistic on coverage
   collectCoverageFrom: [
-    '**/src/**/*.js' // only run coverage in src (ie. test/ folder is excluded)
+    '**/src/**/*.(js|jsx|ts|tsx)' // only run coverage in src (ie. test/ folder is excluded)
   ]
 
 };
