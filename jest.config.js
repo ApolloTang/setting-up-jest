@@ -17,6 +17,7 @@ module.exports = {
 
   //@ Scripts to run before jest is loaded
   setupFiles: [
+    '<rootDir>/node_modules/regenerator-runtime/runtime', // https://github.com/facebook/jest/issues/5698
     "<rootDir>/test/jest.init.js"
   ],
 
