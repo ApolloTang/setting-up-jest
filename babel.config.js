@@ -8,7 +8,7 @@ module.exports = (api) => {
       {
         "targets": {"IE":"11"}
         , "useBuiltIns": "entry" // see: https://github.com/babel/babel/issues/8829
-        , "modules": isTest ? "commonjs" : "false"
+        , "modules": isTest ? "commonjs" : false
       }
     ],
     "@babel/preset-react",
