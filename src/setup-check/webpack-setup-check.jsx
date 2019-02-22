@@ -6,5 +6,10 @@ import  './check-c01-handling-css-file/handling-css-file.js';
 import  './check-c02-handling-css-module/index.js';
 
 import  './check-e01-handling-dynamic-import/lazy-load-a-module.js';
-import  './check-e02-handling-dynamic-import-a-component/index.js';
+import  './check-e02-handling-dynamic-import-a-component/index.jsx';
+
+import  './check-f02-handling-tsx/index.jsx';
+
+const webpackSetupCheck =() => <div>webpackSetupCheck</div>;
+export default webpackSetupCheck;
 

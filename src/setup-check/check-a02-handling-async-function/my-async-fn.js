@@ -1,7 +1,5 @@
 const dataFromAsyncFn = 'dataFromAsyncFn';
-const myAsyncFunction = async function() {
-  return dataFromAsyncFn;
-};
+const myAsyncFunction = async () => dataFromAsyncFn;
 
 export default myAsyncFunction;
-export {dataFromAsyncFn};
+export { dataFromAsyncFn };

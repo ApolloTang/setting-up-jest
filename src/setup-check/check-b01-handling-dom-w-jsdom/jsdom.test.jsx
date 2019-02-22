@@ -7,4 +7,4 @@ test('jsDom works', ()=>{
 
   ReactDom.render(<div>{nodeString}</div>, div);
   expect(div.innerHTML).toBe(`<div>${nodeString}</div>`);
-})
+});

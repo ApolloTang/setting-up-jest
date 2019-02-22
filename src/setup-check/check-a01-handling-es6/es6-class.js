@@ -10,4 +10,4 @@ class MyClass {
 }
 
 export default MyClass;
-export {staticPropValue, classPropValue}
+export { staticPropValue, classPropValue };

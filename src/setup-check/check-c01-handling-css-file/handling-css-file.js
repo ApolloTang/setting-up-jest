@@ -5,5 +5,5 @@ const container = document.createElement('div');
 const textNode = document.createTextNode(text);
 container.className='some-class-in-import-css';
 container.appendChild(textNode);
-document.body.append(container);
+document.body.appendChild(container);
 

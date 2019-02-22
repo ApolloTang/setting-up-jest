@@ -19,7 +19,7 @@ const p2 = new Promise( async (rs, rj) => {
   } catch (err) {
     rj(err);
   }
-})
+});
 
 export {p1, p2};
 

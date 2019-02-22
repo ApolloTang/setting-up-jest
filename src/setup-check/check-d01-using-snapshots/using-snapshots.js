@@ -1,7 +1,7 @@
 const myData = [
-  {a: 'a'},
-  {b: 'b'},
-  {c: 'c'}
+  { a: 'a' },
+  { b: 'b' },
+  { c: 'c' }
 ];
 
-export function getMyData() { return myData };
+export default function getMyData() { return myData; }

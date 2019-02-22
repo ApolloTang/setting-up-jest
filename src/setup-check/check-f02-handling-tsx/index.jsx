@@ -1,10 +1,11 @@
 import React from 'react';
 import ReactDom from 'react-dom';
 
-import LazyLoadAComponent from './lazy-load-a-component.js';
+import HandlingTsx from './checkbox-w-label.tsx';
 
 const portal = document.createElement('div');
-portal.className = 'portal';
+portal.id = 'handling-tsx';
 document.body.appendChild(portal);
 
-ReactDom.render(<LazyLoadAComponent />, portal);
+ReactDom.render(<HandlingTsx />, portal);
+

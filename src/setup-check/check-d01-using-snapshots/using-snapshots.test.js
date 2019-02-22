@@ -1,4 +1,4 @@
-import {getMyData} from './using-snapshots';
+import getMyData from './using-snapshots';
 
 test('Using Snapshots',  ()=>{
   const myData = getMyData();
