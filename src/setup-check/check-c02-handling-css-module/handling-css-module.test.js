@@ -1,6 +1,6 @@
 import {render} from 'react-testing-library';
 import React from 'react';
-import MyComponentWithCssModule from './handling-css-module.js';
+import MyComponentWithCssModule from './handling-css-module.jsx';
 
 test('It handle css module with identity-obj-proxy check', ()=>{
   const {container} = render(<MyComponentWithCssModule />);
