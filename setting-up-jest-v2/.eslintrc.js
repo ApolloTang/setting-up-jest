@@ -30,7 +30,7 @@ module.exports = {
       "react/jsx-uses-react": "error",        // https://github.com/eslint/eslint/issues/11183
       "react/jsx-uses-vars": ["error"],       // https://github.com/eslint/eslint/issues/8226
 
-      "semi": ["error", "never"],
+      "semi": ["false", "never"],
       "quotes": ["error", "single"]
     }
 };

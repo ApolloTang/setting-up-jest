@@ -7,7 +7,7 @@ test('es6-class.test: classProp works', () => {
 })
 
 test('es6-class.test: property initializers are not on the prototype', () => {
-  expect(myClass.__proto__.getMyClassProp).toBe(void 0); // eslint-disable-line
+  expect(myClass.__proto__.getMyClassProp).toBe(void 0)
 })
 
 test('es6-class.test: staticClassProp works', () => {
