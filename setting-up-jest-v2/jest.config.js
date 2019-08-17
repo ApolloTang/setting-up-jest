@@ -1,11 +1,7 @@
-const {defaults} = require('jest-config');
-
 module.exports = {
 
-  // 'testMatch': [ '**/__jest__/**/*.js?(x)', '**/?(*.)+(jest).js?(x)' ], //@ [bug] if use this jest won't compile typescript
-
   testPathIgnorePatterns: [
-    '/nodule_module/',
+    '/node_modules/',
   ],
 
   projects : [
@@ -18,7 +14,7 @@ module.exports = {
   //@ Scripts to run before jest is loaded
   setupFiles: [
     '<rootDir>/node_modules/regenerator-runtime/runtime', // https://github.com/facebook/jest/issues/5698
-    "<rootDir>/test/jest.init.js"
+    '<rootDir>/test/jest.init.js'
   ],
 
   //@ Scripts to run after jest is loaded
@@ -30,6 +26,8 @@ module.exports = {
     '\\.module\\.css$': 'identity-obj-proxy',  // <--- this must come before '\\.css$'
     '\\.css$': require.resolve('./test/style-mock.js')
   },
+
+  // snapshotSerializers: ['jest-emotion'], //<---- not working
 
   //@ if collectCoverageFrom absence, jest coverage will take into account of
   //@ configuration script in 'test' folder. This lead to wrong statistic on coverage

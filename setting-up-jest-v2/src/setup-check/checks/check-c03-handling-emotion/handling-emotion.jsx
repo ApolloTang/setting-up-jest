@@ -10,7 +10,7 @@ const color = 'white'
 const bgColor = 'hsl(100, 30%, 60%)'
 
 const myStyle = css`
-  padding: 10px;
+  padding:  10px;
   background-color: ${bgColor};
   font-size: 16px;
   border-radius: 4px;
