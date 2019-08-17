@@ -1,4 +1,5 @@
 const isTest = String(process.env.NODE_ENV) === 'test';
+const isProd = String(process.env.NODE_ENV) === 'production'
 
 module.exports = (api) => {
   api.cache(true)
@@ -27,9 +28,10 @@ module.exports = (api) => {
       // adding the preset, compiled jsx code will use emotion’s
       // jsx function instead of React.createElement.
       {
-        'sourceMap': true,
-        'autoLabel': true,
-        'labelFormat': '[local]'
+        hoist: isProd,
+        sourceMap: !isProd,
+        autoLabel: !isProd,
+        labelFormat: '[filename]--[local]',
       }
    ]
   ];
