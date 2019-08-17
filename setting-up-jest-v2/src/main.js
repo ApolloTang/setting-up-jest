@@ -1,2 +1,2 @@
 
-import webpackSetupCheck from './setup-check/webpack-setup-check.jsx'
+import webpackSetupCheck from './setup-check/index.js'
