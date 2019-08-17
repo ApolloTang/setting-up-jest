@@ -23,14 +23,22 @@ module.exports = {
     "plugins": [
       "react",
       "react-hooks",
-      "@typescript-eslint"
+      "@typescript-eslint",
+      "emotion"
     ],
     "rules": {
       "react-hooks/rules-of-hooks": "error",
       "react/jsx-uses-react": "error",        // https://github.com/eslint/eslint/issues/11183
       "react/jsx-uses-vars": ["error"],       // https://github.com/eslint/eslint/issues/8226
 
-      "semi": ["false", "never"],
+      // "emotion/jsx-import": "error",       // not need because we are using babel plugin
+      // "emotion/no-vanilla": "error",       // not need because we are using react
+      "emotion/import-from-emotion": "error",
+      "emotion/styled-import": "error",
+
+      "semi": ["off", "never"],
       "quotes": ["error", "single"]
+
+
     }
 };
