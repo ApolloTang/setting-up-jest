@@ -18,6 +18,20 @@ module.exports = (api) => {
     ],
     "@babel/preset-react",
     "@babel/preset-typescript",
+    [
+      // ensure that @emotion/babel-preset-css-prop is inserted after
+      // @babel/preset-react or @babel/preset-typescript.
+      "@emotion/babel-preset-css-prop",
+      // This preset enables the css prop for an entire project
+      // via a single entry to the babel configuration. After
+      // adding the preset, compiled jsx code will use emotion’s
+      // jsx function instead of React.createElement.
+      {
+        "sourceMap": true,
+        "autoLabel": true,
+        "labelFormat": "[local]"
+      }
+   ]
   ];
 
   const plugins = [
