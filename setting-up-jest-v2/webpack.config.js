@@ -59,5 +59,6 @@ module.exports = (env) => {
     ]
   }
 
+  // console.log(configOut)
   return configOut
 }
